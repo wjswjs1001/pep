@@ -12,20 +12,20 @@
     <title>실습4. 제목 :: Web-based 워크샵 문서 만들기</title>
 
     
-    <link href="/webbasedworkshop/css/nucleus.css?1621833915" rel="stylesheet">
-    <link href="/webbasedworkshop/css/fontawesome-all.min.css?1621833915" rel="stylesheet">
-    <link href="/webbasedworkshop/css/hybrid.css?1621833915" rel="stylesheet">
-    <link href="/webbasedworkshop/css/featherlight.min.css?1621833915" rel="stylesheet">
-    <link href="/webbasedworkshop/css/perfect-scrollbar.min.css?1621833915" rel="stylesheet">
-    <link href="/webbasedworkshop/css/auto-complete.css?1621833915" rel="stylesheet">
-    <link href="/webbasedworkshop/css/atom-one-dark-reasonable.css?1621833915" rel="stylesheet">
-    <link href="/webbasedworkshop/css/theme.css?1621833915" rel="stylesheet">
-    <link href="/webbasedworkshop/css/hugo-theme.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/nucleus.css?1621838079" rel="stylesheet">
+    <link href="/webbasedworkshop/css/fontawesome-all.min.css?1621838079" rel="stylesheet">
+    <link href="/webbasedworkshop/css/hybrid.css?1621838079" rel="stylesheet">
+    <link href="/webbasedworkshop/css/featherlight.min.css?1621838079" rel="stylesheet">
+    <link href="/webbasedworkshop/css/perfect-scrollbar.min.css?1621838079" rel="stylesheet">
+    <link href="/webbasedworkshop/css/auto-complete.css?1621838079" rel="stylesheet">
+    <link href="/webbasedworkshop/css/atom-one-dark-reasonable.css?1621838079" rel="stylesheet">
+    <link href="/webbasedworkshop/css/theme.css?1621838079" rel="stylesheet">
+    <link href="/webbasedworkshop/css/hugo-theme.css?1621838079" rel="stylesheet">
     
-      <link href="/webbasedworkshop/css/theme-aws.css?1621833915" rel="stylesheet">
+      <link href="/webbasedworkshop/css/theme-aws.css?1621838079" rel="stylesheet">
     
 
-    <script src="/webbasedworkshop/js/jquery-3.3.1.min.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/jquery-3.3.1.min.js?1621838079"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/webbasedworkshop/js/lunr.min.js?1621833915"></script>
-<script type="text/javascript" src="/webbasedworkshop/js/auto-complete.js?1621833915"></script>
+<script type="text/javascript" src="/webbasedworkshop/js/lunr.min.js?1621838079"></script>
+<script type="text/javascript" src="/webbasedworkshop/js/auto-complete.js?1621838079"></script>
 <script type="text/javascript">
     
         var baseurl = "\/webbasedworkshop\/";
     
 </script>
-<script type="text/javascript" src="/webbasedworkshop/js/search.js?1621833915"></script>
+<script type="text/javascript" src="/webbasedworkshop/js/search.js?1621838079"></script>
 
     
   </div>
@@ -77,13 +77,13 @@
  
   
     
-    <li data-nav-id="/webbasedworkshop/lab0/" title="실습1. ClowdWatch Handson Lab" class="dd-item 
+    <li data-nav-id="/webbasedworkshop/lab0/" title="소개. ClowdWatch Handson Lab" class="dd-item 
         
         
         
         ">
       <a href="/webbasedworkshop/lab0/">
-          <b>1. </b>실습1. ClowdWatch Handson Lab
+          <b>1. </b>소개. ClowdWatch Handson Lab
           
             <i class="fas fa-check read-icon"></i>
           
@@ -365,13 +365,13 @@
 <p><strong>4.1 Create the Log Metric</strong></p>
 <ol>
 <li>Navigate to the CloudWatch <strong>Logs</strong> dashboard at this <a href="https://console.aws.amazon.com/cloudwatch/home#logs:">link</a>.</li>
-<li>In the contents pane, select the <strong>application.log</strong> group by clicking on the radio button next to it, and then choose Create Metric Filter. <img src="Aspose.Words.c0e37e3b-bc2f-432e-97a1-de93a0d3684d.001.jpeg" alt="Create Metric Filter">
+<li>In the contents pane, select the <strong>application.log</strong> group by clicking on the radio button next to it, and then choose Create Metric Filter. <img src="images/Aspose.Words.c0e37e3b-bc2f-432e-97a1-de93a0d3684d.001.jpeg" alt="Create Metric Filter">
 <ol>
 <li>On the <strong>Define Logs Metric Filter</strong> screen, for <strong>Filter Pattern</strong>, type:</li>
 <li>[logType, myTimestamp, severity, delim1, delim2, type, action, for, Image, imgNum, Name, imgTags, Confidence, cValue]</li>
 <li>To test your filter pattern, for <strong>Select Log Data to Test</strong>, select the log group to test the metric filter against, and then choose Test Pattern.</li>
 <li>Under <strong>Results</strong>, CloudWatch Logs displays a message showing how many occurrences of the filter pattern were found in the log file. To see detailed results, click Show test results.</li>
-<li>Choose <strong>Assign Metric</strong> <img src="Aspose.Words.c0e37e3b-bc2f-432e-97a1-de93a0d3684d.002.jpeg" alt="Define Log Metric"></li>
+<li>Choose <strong>Assign Metric</strong> <img src="images/Aspose.Words.c0e37e3b-bc2f-432e-97a1-de93a0d3684d.002.jpeg" alt="Define Log Metric"></li>
 </ol>
 </li>
 <li>On the <strong>Create Metric Filter and Assign a Metric</strong> screen,
@@ -381,7 +381,7 @@
 <li>For <strong>Metric Name</strong>, type <em>cValue</em></li>
 <li>Choose <strong>Show advanced metric settings</strong></li>
 <li>For <strong>Metric Value</strong> choose <em>$cValue</em>.</li>
-<li>Leave the <strong>Default Value</strong> undefined, and then choose <strong>Create Filter</strong>. <img src="Aspose.Words.c0e37e3b-bc2f-432e-97a1-de93a0d3684d.003.jpeg" alt="Assign Metric"></li>
+<li>Leave the <strong>Default Value</strong> undefined, and then choose <strong>Create Filter</strong>. <img src="images/Aspose.Words.c0e37e3b-bc2f-432e-97a1-de93a0d3684d.003.jpeg" alt="Assign Metric"></li>
 </ol>
 </li>
 </ol>
@@ -588,19 +588,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/webbasedworkshop/js/clipboard.min.js?1621833915"></script>
-    <script src="/webbasedworkshop/js/perfect-scrollbar.min.js?1621833915"></script>
-    <script src="/webbasedworkshop/js/perfect-scrollbar.jquery.min.js?1621833915"></script>
-    <script src="/webbasedworkshop/js/jquery.sticky.js?1621833915"></script>
-    <script src="/webbasedworkshop/js/featherlight.min.js?1621833915"></script>
-    <script src="/webbasedworkshop/js/highlight.pack.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/clipboard.min.js?1621838079"></script>
+    <script src="/webbasedworkshop/js/perfect-scrollbar.min.js?1621838079"></script>
+    <script src="/webbasedworkshop/js/perfect-scrollbar.jquery.min.js?1621838079"></script>
+    <script src="/webbasedworkshop/js/jquery.sticky.js?1621838079"></script>
+    <script src="/webbasedworkshop/js/featherlight.min.js?1621838079"></script>
+    <script src="/webbasedworkshop/js/highlight.pack.js?1621838079"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/webbasedworkshop/js/modernizr.custom-3.6.0.js?1621833915"></script>
-    <script src="/webbasedworkshop/js/learn.js?1621833915"></script>
-    <script src="/webbasedworkshop/js/hugo-learn.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/modernizr.custom-3.6.0.js?1621838079"></script>
+    <script src="/webbasedworkshop/js/learn.js?1621838079"></script>
+    <script src="/webbasedworkshop/js/hugo-learn.js?1621838079"></script>
 
-    <link href="/webbasedworkshop/mermaid/mermaid.css?1621833915" rel="stylesheet" />
-    <script src="/webbasedworkshop/mermaid/mermaid.js?1621833915"></script>
+    <link href="/webbasedworkshop/mermaid/mermaid.css?1621838079" rel="stylesheet" />
+    <script src="/webbasedworkshop/mermaid/mermaid.js?1621838079"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

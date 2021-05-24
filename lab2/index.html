@@ -12,20 +12,20 @@
     <title>실습3. 제목 :: Web-based 워크샵 문서 만들기</title>
 
     
-    <link href="/webbasedworkshop/css/nucleus.css?1621833915" rel="stylesheet">
-    <link href="/webbasedworkshop/css/fontawesome-all.min.css?1621833915" rel="stylesheet">
-    <link href="/webbasedworkshop/css/hybrid.css?1621833915" rel="stylesheet">
-    <link href="/webbasedworkshop/css/featherlight.min.css?1621833915" rel="stylesheet">
-    <link href="/webbasedworkshop/css/perfect-scrollbar.min.css?1621833915" rel="stylesheet">
-    <link href="/webbasedworkshop/css/auto-complete.css?1621833915" rel="stylesheet">
-    <link href="/webbasedworkshop/css/atom-one-dark-reasonable.css?1621833915" rel="stylesheet">
-    <link href="/webbasedworkshop/css/theme.css?1621833915" rel="stylesheet">
-    <link href="/webbasedworkshop/css/hugo-theme.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/nucleus.css?1621838079" rel="stylesheet">
+    <link href="/webbasedworkshop/css/fontawesome-all.min.css?1621838079" rel="stylesheet">
+    <link href="/webbasedworkshop/css/hybrid.css?1621838079" rel="stylesheet">
+    <link href="/webbasedworkshop/css/featherlight.min.css?1621838079" rel="stylesheet">
+    <link href="/webbasedworkshop/css/perfect-scrollbar.min.css?1621838079" rel="stylesheet">
+    <link href="/webbasedworkshop/css/auto-complete.css?1621838079" rel="stylesheet">
+    <link href="/webbasedworkshop/css/atom-one-dark-reasonable.css?1621838079" rel="stylesheet">
+    <link href="/webbasedworkshop/css/theme.css?1621838079" rel="stylesheet">
+    <link href="/webbasedworkshop/css/hugo-theme.css?1621838079" rel="stylesheet">
     
-      <link href="/webbasedworkshop/css/theme-aws.css?1621833915" rel="stylesheet">
+      <link href="/webbasedworkshop/css/theme-aws.css?1621838079" rel="stylesheet">
     
 
-    <script src="/webbasedworkshop/js/jquery-3.3.1.min.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/jquery-3.3.1.min.js?1621838079"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/webbasedworkshop/js/lunr.min.js?1621833915"></script>
-<script type="text/javascript" src="/webbasedworkshop/js/auto-complete.js?1621833915"></script>
+<script type="text/javascript" src="/webbasedworkshop/js/lunr.min.js?1621838079"></script>
+<script type="text/javascript" src="/webbasedworkshop/js/auto-complete.js?1621838079"></script>
 <script type="text/javascript">
     
         var baseurl = "\/webbasedworkshop\/";
     
 </script>
-<script type="text/javascript" src="/webbasedworkshop/js/search.js?1621833915"></script>
+<script type="text/javascript" src="/webbasedworkshop/js/search.js?1621838079"></script>
 
     
   </div>
@@ -77,13 +77,13 @@
  
   
     
-    <li data-nav-id="/webbasedworkshop/lab0/" title="실습1. ClowdWatch Handson Lab" class="dd-item 
+    <li data-nav-id="/webbasedworkshop/lab0/" title="소개. ClowdWatch Handson Lab" class="dd-item 
         
         
         
         ">
       <a href="/webbasedworkshop/lab0/">
-          <b>1. </b>실습1. ClowdWatch Handson Lab
+          <b>1. </b>소개. ClowdWatch Handson Lab
           
             <i class="fas fa-check read-icon"></i>
           
@@ -380,7 +380,7 @@
 </ul>
 <p><strong>3.1 Install and configure the CloudWatch agent</strong></p>
 <p>We will collect metrics and logs from our Amazon EC2 instances using the CloudWatch agent. If we had on-prem servers we could also use the CloudWatch agent to capture metrics and logs from those.</p>
-<p>The CloudWatch Agent requires and IAM role that was created with the execution of the CloudFormation script. We will install the agent, and then configure it using a predefined configuration placed in System Manager Parameter Store by our CloudFormation script. With our configuration in parameter store we can easily apply it as a standard across our fleet. You can learn more by following this <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-first-instance.html"><em>Getting Started</em></a> link.</p>
+<p>The CloudWatch Agent requires and IAM role that was created with the execution of the CloudFormation script. We will install the agent, and then configure it using a predefined configuration placed in System Manager Parameter Store by our CloudFormation script. With our configuration in parameter store we can easily apply it as a standard across our fleet. You can learn more by following this <a href="/https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-first-instance.html"><em>Getting Started</em></a> link.</p>
 <p><strong>3.2 Review the Parameter Store configuration</strong></p>
 <p>The configuration file we have in Parameter Store follows a required naming convention (it must start with AmazonCloudWatch-) that allows us to take advantage of the CloudWatchAgentServerPolicy IAM role. To simplify our management. You can learn more at this <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-iam-roles-for-cloudwatch-agent.html">link</a>..</p>
 <ol>
@@ -397,8 +397,8 @@
 <li>In the <strong>Command document</strong> list, select <strong>AWS-ConfigureAWSPackage</strong> by selecting the radio button next to it.</li>
 <li>In the <strong>Action</strong> list, choose <strong>Install</strong>.</li>
 <li>In the <strong>Name</strong> field, type <strong>AmazonCloudWatchAgent</strong></li>
-<li>In the <strong>Version</strong> field, type <em>latest</em>. <img src="Aspose.Words.d57cf7a6-dcd1-4830-a1d3-c826042321a9.001.jpeg" alt="Command Parameters">cwagenttargets</li>
-<li>In the <strong>Targets</strong> area, Manually select the ExampleCorp instances. You could also target instances by tag. <img src="Aspose.Words.d57cf7a6-dcd1-4830-a1d3-c826042321a9.002.jpeg" alt="Command Parameters"></li>
+<li>In the <strong>Version</strong> field, type <em>latest</em>. <img src="images/Aspose.Words.d57cf7a6-dcd1-4830-a1d3-c826042321a9.001.jpeg" alt="Command Parameters">cwagenttargets</li>
+<li>In the <strong>Targets</strong> area, Manually select the ExampleCorp instances. You could also target instances by tag. <img src="images/Aspose.Words.d57cf7a6-dcd1-4830-a1d3-c826042321a9.002.jpeg" alt="Command Parameters"></li>
 <li>In the <strong>Output options</strong> area uncheck the box next to <strong>Enable writing to an S3 bucket</strong>.</li>
 <li>Choose <strong>Run</strong>.</li>
 </ol>
@@ -416,7 +416,7 @@
 <li>In the <strong>Action</strong> list, choose the default <strong>configure</strong>.</li>
 <li>In the <strong>Mode</strong> list, choose the default <strong>ec2</strong></li>
 <li>In the <strong>Optional Configuration Source</strong> list, choose the default ssm.</li>
-<li>In the <strong>Optional Configuration Location</strong> box, type the name of the agent configuration file that we created and saved to Systems Manager Parameter Store <em>AmazonCloudWatch-ExampleCorpConfig</em> <img src="Aspose.Words.d57cf7a6-dcd1-4830-a1d3-c826042321a9.003.jpeg" alt="Command Parameters"></li>
+<li>In the <strong>Optional Configuration Location</strong> box, type the name of the agent configuration file that we created and saved to Systems Manager Parameter Store <em>AmazonCloudWatch-ExampleCorpConfig</em> <img src="images/Aspose.Words.d57cf7a6-dcd1-4830-a1d3-c826042321a9.003.jpeg" alt="Command Parameters"></li>
 </ol>
 </li>
 <li>In the <strong>Optional Restart</strong> list, choose <strong>yes</strong> to start the agent after you have finished these steps.</li>
@@ -439,7 +439,7 @@
 <p><strong>3.4 Generate logs through user activity</strong></p>
 <ol>
 <li>In a web browser navigate to the URL Output of the Example Corp CloudFormation Stack to reach the ExampleCorp application
-<img src="Aspose.Words.d57cf7a6-dcd1-4830-a1d3-c826042321a9.004.jpeg" alt="CloudFormation Output"></li>
+<img src="images/Aspose.Words.d57cf7a6-dcd1-4830-a1d3-c826042321a9.004.jpeg" alt="CloudFormation Output"></li>
 <li>Create an account by choosing login and then choosing Sign up at the Log in page.
 <ol>
 <li>Enter an Email address, a Username, and a Password and choose Sign up</li>
@@ -458,7 +458,7 @@
 <li>Choose the Log Stream of an instance</li>
 <li>At the top right of the grey field, in the time window definition box, choose the pull down.</li>
 <li>Choose to Relative, by clicking on the term.</li>
-<li>Choose 2 Hours <img src="Aspose.Words.d57cf7a6-dcd1-4830-a1d3-c826042321a9.005.jpeg" alt="CloudFormation Output"></li>
+<li>Choose 2 Hours <img src="images/Aspose.Words.d57cf7a6-dcd1-4830-a1d3-c826042321a9.005.jpeg" alt="CloudFormation Output"></li>
 <li>Review the recent logs. Enter a Tag value identified by ExampleCorp in the Filter Events text box and review the associated logs.</li>
 </ol>
 </li>
@@ -658,19 +658,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/webbasedworkshop/js/clipboard.min.js?1621833915"></script>
-    <script src="/webbasedworkshop/js/perfect-scrollbar.min.js?1621833915"></script>
-    <script src="/webbasedworkshop/js/perfect-scrollbar.jquery.min.js?1621833915"></script>
-    <script src="/webbasedworkshop/js/jquery.sticky.js?1621833915"></script>
-    <script src="/webbasedworkshop/js/featherlight.min.js?1621833915"></script>
-    <script src="/webbasedworkshop/js/highlight.pack.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/clipboard.min.js?1621838079"></script>
+    <script src="/webbasedworkshop/js/perfect-scrollbar.min.js?1621838079"></script>
+    <script src="/webbasedworkshop/js/perfect-scrollbar.jquery.min.js?1621838079"></script>
+    <script src="/webbasedworkshop/js/jquery.sticky.js?1621838079"></script>
+    <script src="/webbasedworkshop/js/featherlight.min.js?1621838079"></script>
+    <script src="/webbasedworkshop/js/highlight.pack.js?1621838079"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/webbasedworkshop/js/modernizr.custom-3.6.0.js?1621833915"></script>
-    <script src="/webbasedworkshop/js/learn.js?1621833915"></script>
-    <script src="/webbasedworkshop/js/hugo-learn.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/modernizr.custom-3.6.0.js?1621838079"></script>
+    <script src="/webbasedworkshop/js/learn.js?1621838079"></script>
+    <script src="/webbasedworkshop/js/hugo-learn.js?1621838079"></script>
 
-    <link href="/webbasedworkshop/mermaid/mermaid.css?1621833915" rel="stylesheet" />
-    <script src="/webbasedworkshop/mermaid/mermaid.js?1621833915"></script>
+    <link href="/webbasedworkshop/mermaid/mermaid.css?1621838079" rel="stylesheet" />
+    <script src="/webbasedworkshop/mermaid/mermaid.js?1621838079"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

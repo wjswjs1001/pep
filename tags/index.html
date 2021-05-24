@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/webbasedworkshop/images/favicon.png" type="image/png">
 
-    <title>실습5. 제목 :: Web-based 워크샵 문서 만들기</title>
+    <title>Tags :: Web-based 워크샵 문서 만들기</title>
 
     
     <link href="/webbasedworkshop/css/nucleus.css?1621838079" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/webbasedworkshop/lab4/">
+  <body class="" data-url="/webbasedworkshop/tags/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -174,8 +174,8 @@
   
     
     <li data-nav-id="/webbasedworkshop/lab4/" title="실습5. 제목" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/webbasedworkshop/lab4/">
@@ -306,7 +306,7 @@
             
           
           
-            <a href='/webbasedworkshop/'>홈</a> > 실습5. 제목
+            <a href='/webbasedworkshop/'>홈</a> > Tags
           
          
           
@@ -317,15 +317,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#큰제목">큰제목</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+
     </div>
 </div>
 
@@ -341,7 +333,9 @@
           
             <h1>
               
-              실습5. 제목
+                taxonomy ::
+              
+              Tags
             </h1>
           
 
@@ -350,70 +344,11 @@
 
 
 
-	<p><strong>실습에 대한 설명을 적습니다.</strong> <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<h3 id="큰제목">큰제목</h3>
-<ol>
-<li>순서를 가이드합니다.</li>
-</ol>
-<p><strong>Create alarms</strong></p>
-<p><strong>Create Alarms for Known Issues from Metrics</strong></p>
-<p>Monitoring for Application Outcomes Ryn Brandish wants to understand when there are application issue and is concerned about security. He would like metrics for errors and warnings. ExampleCorp has limitations on the image size that it can successfully process. While this issue does not happen frequently it does not make customers happy. Being aware of the error rate for submitted images will allow the Business and Development team to determine if increase the image size should be a priority. Currently most warnings are related to security issues. Ryn would like visibility on how often they happen.</p>
-<p><strong>5.1 Create a log filter metric based on the defined threshold for the error</strong></p>
-<ol>
-<li>Click on Log Groups in the breadcrumb trail at the top of the screen</li>
-<li>Select the application.log log group</li>
-<li>Click on the Create Metric Filter button</li>
-<li>Enter “ActiveStorage::InvariableError” (include quotes) for Filter Pattern. This is a known error that we will cause later in the lab.</li>
-<li>Click on the Assign Metric button</li>
-<li>Enter ImageError as the Metric Name</li>
-<li>Click on the Create Filter button <img src="images/Aspose.Words.6ae51449-4f5a-4d5b-9bf8-6ebed332625d.001.jpeg" alt="Image Error Metric"></li>
-</ol>
-<p><strong>5.2 Create an alarm for the error when the metric threshold is crossed</strong></p>
-<ol>
-<li>Click on Create Alarm</li>
-<li>Click Edit by Metric <img src="images/Aspose.Words.6ae51449-4f5a-4d5b-9bf8-6ebed332625d.002.jpeg" alt="Edit Metric"></li>
-<li>Change Period to 10 seconds</li>
-<li>Click on Select metric button
-<ol>
-<li>Enter ImageErrorAlarm for Name</li>
-<li>After is &gt;=, change the 0 to 1</li>
-<li>Select good (not breaching threshold) for Treat missing data as</li>
-<li>Under Actions Select from the Drop Down the ExampleCorpErrorNotify* list to Send notifications to</li>
-<li>Enter [your email address] for Email list <img src="images/Aspose.Words.6ae51449-4f5a-4d5b-9bf8-6ebed332625d.003.jpeg" alt="Create Alarm"></li>
-</ol>
-</li>
-<li>Click on the Create Alarm button</li>
-<li>Click on the I will do it later button when asked to verify the email address</li>
-</ol>
-<p><strong>NOTE:</strong> You should see that the alarm has insufficient data with a 1 next to INSUFFICIENT in the navigation menu. This will change to OK within a few seconds.</p>
-<p><strong>5.3 Generate error logs through user activity</strong></p>
-<ol>
-<li>Navigate to the ExampleCorp using the URL that you made a note of earlier (CloudFormation Output).</li>
-<li>Enter <a href="mailto:admin@admin.com">admin@admin.com</a> for email</li>
-<li>Enter Password123 for Password</li>
-<li>Click Login</li>
-<li>Click Upload Image Click Select Image</li>
-<li>Find break_app.jpg in your filesystem</li>
-<li>Click Upload</li>
-</ol>
-<p><strong>NOTE:</strong> The application will start exhibiting issues, and the application will eventually fail to load.</p>
-<p><strong>5.4 Review logs to identify error</strong></p>
-<ol>
-<li>Navigate to the CloudWatch Console</li>
-<li>Click Logs in the navigation menu</li>
-<li>Click on application.log log group - this is from /opt/ExampleCorp/log/application.log as configured earlier in the CloudWatch agent configuration.</li>
-<li>Click on the Search Log Group button</li>
-<li>Enter ERROR (case sensitive) and hit enter.</li>
-<li>You will see errors ending ActiveStorage::InvariableError. This is an error that is generated when a user uploads a non-image file. This is a known issue, but the Dev team has not had cycles to adress it.</li>
-</ol>
-<p><strong>Build a Monitoring Plan: Alerting and Response</strong></p>
-<p>Monitoring for Operational Outcomes Sansa Bailish is focused on outages, reliability, and getting better sleep. There is a known issue with image trends; when the instances are rebooted the application doesn’t restart. Too frequently Sansa has received a late night call to get online and restart the application. The user experience lead is very frustrated with the downtime associated to these incidents. They need to be detected sooner and resolved faster.</p>
-<p>Sansa is looking for a monitoring solution to detect the incident (the reboot event), and a way to trigger an automated recovery.</p>
-<hr>
-<!-- raw HTML omitted -->
 
 
-
+<ul>
+	
+</ul>
 
 
 <footer class=" footline" >
@@ -518,7 +453,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -534,9 +468,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -574,10 +505,8 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/webbasedworkshop/lab3/" title="실습4. 제목"> <i class="fa fa-chevron-left"></i></a>
 		
-		
-			<a class="nav nav-next" href="/webbasedworkshop/lab5/" title="실습5. 제목" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/webbasedworkshop/lab0/" title="소개. ClowdWatch Handson Lab" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
