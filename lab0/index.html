@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ko" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="description" content="Hugo를 이용한 워크샵 문서 만들기">
+<meta name="author" content="Hyuna Jung">
+
+    <link rel="icon" href="/webbasedworkshop/images/favicon.png" type="image/png">
+
+    <title>실습1. ClowdWatch Handson Lab :: Web-based 워크샵 문서 만들기</title>
+
+    
+    <link href="/webbasedworkshop/css/nucleus.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/fontawesome-all.min.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/hybrid.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/featherlight.min.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/perfect-scrollbar.min.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/auto-complete.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/atom-one-dark-reasonable.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/theme.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/hugo-theme.css?1621833915" rel="stylesheet">
+    
+      <link href="/webbasedworkshop/css/theme-aws.css?1621833915" rel="stylesheet">
+    
+
+    <script src="/webbasedworkshop/js/jquery-3.3.1.min.js?1621833915"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/webbasedworkshop/lab0/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/webbasedworkshop">
+	<img src="/webbasedworkshop/images/logo.png" height="70px"/>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/webbasedworkshop/js/lunr.min.js?1621833915"></script>
+<script type="text/javascript" src="/webbasedworkshop/js/auto-complete.js?1621833915"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/webbasedworkshop\/";
+    
+</script>
+<script type="text/javascript" src="/webbasedworkshop/js/search.js?1621833915"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab0/" title="실습1. ClowdWatch Handson Lab" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/webbasedworkshop/lab0/">
+          <b>1. </b>실습1. ClowdWatch Handson Lab
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab1/" title="실습2. 제목" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/webbasedworkshop/lab1/">
+          <b>2. </b>실습2. 제목
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab2/" title="실습3. 제목" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/webbasedworkshop/lab2/">
+          <b>3. </b>실습3. 제목
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab3/" title="실습4. 제목" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/webbasedworkshop/lab3/">
+          <b>4. </b>실습4. 제목
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab4/" title="실습5. 제목" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/webbasedworkshop/lab4/">
+          <b>5. </b>실습5. 제목
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab5/" title="실습5. 제목" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/webbasedworkshop/lab5/">
+          <b>5. </b>실습5. 제목
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab6/" title="실습5. 제목" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/webbasedworkshop/lab6/">
+          <b>5. </b>실습5. 제목
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3></h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="/webbasedworkshop/credits/"><i class='fas fa-fw fa-bullhorn'></i> 크레딧</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> </a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      © 2020 Amazon Web Services, Inc. or its Affiliates. All rights reserved.
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/webbasedworkshop/'>홈</a> > 실습1. ClowdWatch Handson Lab
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#큰제목">큰제목</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              실습1. ClowdWatch Handson Lab
+            </h1>
+          
+
+        
+
+
+
+
+	<p>**You will need the following to be able to perform this lab:</p>
+<ul>
+<li>The lab must be performed logged into a user with Administrator permissions and an existing EC2 Key Pair</li>
+<li>An available VPC in the region us-east-1 region.** <!-- raw HTML omitted -->Setup<!-- raw HTML omitted --></li>
+</ul>
+<h3 id="큰제목">큰제목</h3>
+<ol>
+<li>순서를 가이드합니다.</li>
+</ol>
+<h1 id="setup"><strong>Setup</strong></h1>
+<p><strong>Lab Setup</strong></p>
+<p><strong>1.1 Deploy the Lab Infrastructure using CloudFormation</strong></p>
+<p>There are two options for launching the CloudFormation Stack. The first option will automatically populate your CloudFormation stack variables. The second option will walk through all the steps involved in manually creating a new stack from a template URL.</p>
+<p><strong>Option A:</strong> Automatically launch and populate stack creation variables</p>
+<p><a href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?region=us-east-1&amp;stackName=CWLab&amp;templateURL=https://s3.amazonaws.com/workshop.aws-management.tools/cloudwatch/templates/distributed.yaml"><strong>Deploy Lab by clicking here</strong></a></p>
+<p><strong>NOTE:</strong> The automatic launch process will only work if you are using the new version of the CloudFormation console.</p>
+<p>If the button fails to take you to the create new stack page, try switching to the new CloudFormation console by clicking the New Console link in the CloudFormation drop-down menu.</p>
+<p><strong>Option B:</strong> Manually walk through the stack creation from a template URL</p>
+<ol>
+<li><strong>Copy the CloudFormation script URL</strong> for this lab: <a href="https://s3.amazonaws.com/workshop.aws-management.tools/cloudwatch/templates/distributed.yaml">distributed.yaml</a></li>
+</ol>
+<p><strong>NOTE:</strong> The instructions below are based on the new version of the CloudFormation console.If the button fails to take you to the create new stack page, try switching to the new CloudFormation console by clicking the New Console link in the CloudFormation drop-down menu.</p>
+<ol>
+<li>Use your administrator account to access the CloudFormation console at <a href="https://console.aws.amazon.com/cloudformation/">https://console.aws.amazon.com/cloudformation/</a>.</li>
+<li>Click the <strong>Create Stack</strong> button.</li>
+</ol>
+<ul>
+<li>On the <strong>Specify Template</strong> screen:
+<ul>
+<li>Ensure the <strong>Template is ready</strong> radio button is selected under the Prerequisite - Prepare template section.</li>
+<li>Ensure that the <strong>Amazon S3 URL</strong> radio button is selected under the Specify template section and then paste the copied URL into the Amazon S3 URL textbox.</li>
+</ul>
+</li>
+</ul>
+<p><strong>NOTE:</strong> A CloudFormation template is a JSON or YAML formatted text file that describes your AWS infrastructure containing both <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html">optional and required sections</a>. In the next steps, we will provide a name for our stack and parameters that will be passed into the template to help define the resources that will be implemented.</p>
+<ol>
+<li>On the <strong>Specify Template</strong> step, next to Specify an Amazon S3 template URL, click the link to View in Designer.</li>
+</ol>
+<ul>
+<li>Take a moment to look at the graphical representation of the environment we are about to create, and the template in the JSON and YAML formats.</li>
+<li>The template was written in YAML as a nested stack and this is a method to convert it to JSON if that is your preference. <strong>NOTE:</strong> AWS CloudFormation Designer is a graphic tool for creating, viewing, and modifying AWS CloudFormation templates. With Designer, you can diagram your template resources using a drag-and-drop interface, and then edit their details using the integrated JSON and YAML editor. AWS CloudFormation Designer can help you quickly see the interrelationship between a template's resources and easily modify templates.</li>
+</ul>
+<ol start="2">
+<li>Choose the Create Stack icon (a cloud with an arrow) to return to the Specify Template step. <strong>NOTE:</strong> By clicking the Create Stack option in the Designer, you will automatically create a new cf-template S3 bucket in your selected region, and the original template will be copied with a unique random name and placed in your new S3 bucket.</li>
+<li>On the Specify Template step, click the Next button.</li>
+<li>On the Specify Details page:</li>
+</ol>
+<ul>
+<li>Define your Stack name: by entering CWLab</li>
+<li>Provide your email address. This will only be used in the lab, and will only be used to send you SNS notifications of events.</li>
+<li>Define the HTTPLocation CIDR subnet address to limit who can connect to your resources.
+<ul>
+<li>You can use <a href="http://checkip.amazonaws.com/">checkip.amazonaws.com/</a> to identify your IP address and restrict access to it specifically by entering the IP followed by the CIDR subnet mask of /32 (with no spaces between IP and the CIDR subnet mask).</li>
+</ul>
+</li>
+<li>Select an InstanceType. We recommend selecting the default free tier eligible t2.micro option.</li>
+<li>Select your EC2 KeyPair from the KeyName pull down list.</li>
+<li>Define your SSHLocation entering your IP address with CIDR subnet mask</li>
+<li>Define your Workload name as ExampleCorp</li>
+</ul>
+<ol start="5">
+<li>Choose Next</li>
+<li>On the Options page optionally specify additional Tags, and then scroll down and choose Next</li>
+<li>On the Review page:</li>
+</ol>
+<ul>
+<li>Review your selections</li>
+<li>Scroll down and check the box I acknowledge that AWS CloudFormation might create IAM resources.</li>
+</ul>
+<ol start="8">
+<li>Choose Create</li>
+</ol>
+<p><strong>1.2 Confirm your subscription to the SNS Notification</strong> - After the CloudFormation script has completed, enter the email client for the address you provided earlier. - Locate and email from AWS Notifications with the subject AWS Notifications - Subscription Confirmation. - Click through the Confirm subscription link to confirm your subscription.</p>
+<p><strong>Note:</strong> In this lab you will interact with the web based application you just created. To generate activity logs you will need to upload pictures to your application server. You can use your own images or download sample images to use here: <a href="https://workshop.aws-management.tools/cloudwatch/templates/sample-photos.zip">Sample Photos</a> The sample image file is 76MB. If you plan to use the sample images start the download now so it can complete before you need them.</p>
+<hr>
+<!-- raw HTML omitted -->
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/webbasedworkshop/" title="홈"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/webbasedworkshop/lab1/" title="실습2. 제목" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/webbasedworkshop/js/clipboard.min.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/perfect-scrollbar.min.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/perfect-scrollbar.jquery.min.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/jquery.sticky.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/featherlight.min.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/highlight.pack.js?1621833915"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/webbasedworkshop/js/modernizr.custom-3.6.0.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/learn.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/hugo-learn.js?1621833915"></script>
+
+    <link href="/webbasedworkshop/mermaid/mermaid.css?1621833915" rel="stylesheet" />
+    <script src="/webbasedworkshop/mermaid/mermaid.js?1621833915"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+  </body>
+</html>

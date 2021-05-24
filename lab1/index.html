@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ko" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="description" content="Hugo를 이용한 워크샵 문서 만들기">
+<meta name="author" content="Hyuna Jung">
+
+    <link rel="icon" href="/webbasedworkshop/images/favicon.png" type="image/png">
+
+    <title>실습2. 제목 :: Web-based 워크샵 문서 만들기</title>
+
+    
+    <link href="/webbasedworkshop/css/nucleus.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/fontawesome-all.min.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/hybrid.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/featherlight.min.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/perfect-scrollbar.min.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/auto-complete.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/atom-one-dark-reasonable.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/theme.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/hugo-theme.css?1621833915" rel="stylesheet">
+    
+      <link href="/webbasedworkshop/css/theme-aws.css?1621833915" rel="stylesheet">
+    
+
+    <script src="/webbasedworkshop/js/jquery-3.3.1.min.js?1621833915"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/webbasedworkshop/lab1/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/webbasedworkshop">
+	<img src="/webbasedworkshop/images/logo.png" height="70px"/>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/webbasedworkshop/js/lunr.min.js?1621833915"></script>
+<script type="text/javascript" src="/webbasedworkshop/js/auto-complete.js?1621833915"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/webbasedworkshop\/";
+    
+</script>
+<script type="text/javascript" src="/webbasedworkshop/js/search.js?1621833915"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab0/" title="실습1. ClowdWatch Handson Lab" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/webbasedworkshop/lab0/">
+          <b>1. </b>실습1. ClowdWatch Handson Lab
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab1/" title="실습2. 제목" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/webbasedworkshop/lab1/">
+          <b>2. </b>실습2. 제목
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab2/" title="실습3. 제목" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/webbasedworkshop/lab2/">
+          <b>3. </b>실습3. 제목
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab3/" title="실습4. 제목" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/webbasedworkshop/lab3/">
+          <b>4. </b>실습4. 제목
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab4/" title="실습5. 제목" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/webbasedworkshop/lab4/">
+          <b>5. </b>실습5. 제목
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab5/" title="실습5. 제목" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/webbasedworkshop/lab5/">
+          <b>5. </b>실습5. 제목
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab6/" title="실습5. 제목" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/webbasedworkshop/lab6/">
+          <b>5. </b>실습5. 제목
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3></h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="/webbasedworkshop/credits/"><i class='fas fa-fw fa-bullhorn'></i> 크레딧</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> </a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      © 2020 Amazon Web Services, Inc. or its Affiliates. All rights reserved.
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/webbasedworkshop/'>홈</a> > 실습2. 제목
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#큰제목">큰제목</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              실습2. 제목
+            </h1>
+          
+
+        
+
+
+
+
+	<p><strong>실습에 대한 설명을 적습니다.</strong> <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="큰제목">큰제목</h3>
+<ol>
+<li>순서를 가이드합니다.</li>
+</ol>
+<h1 id="narrative"><strong>Narrative</strong></h1>
+<p><strong>Review the ExampleCorp Requirements and Build a Monitoring Plan</strong></p>
+<p><strong>2.1 Review the ExampleCorp [fictional] Narrative</strong></p>
+<p>In the lab we will use a mock workload for a fictitious company to learn about performing operations on AWS. Details on the application used in this lab can be found on GitHub at this link.</p>
+<p>_ <strong>About Us:</strong> _ ExampleCorp was started on a simple idea: &quot;A picture is worth a thousand words&quot;. We help users find out how many words that picture is worth. Our users make thousands of connections every day based on what they discover in the pictures they share. We want to make sharing pictures and identifying what lies within, faster and easier for them.</p>
+<p>_ <strong>Our App:</strong> _ ExampleCorp has one primary application – a photo library that tags the contents of images users upload, through machine learning. Through our application users can upload pictures of themselves and friends to see which celebrities they resemble, and find celebrities in photos they upload. We have &amp;gt;5 million users (500,000 active daily).</p>
+<p>_ <strong>Our Architecture:</strong> _ The ExampleCorp application is a simple Ruby on Rails app with a MySQL database. It is installed as two Docker containers (application and database) launched in a VPC on EC2 instances using CloudFormation. Users upload images and background jobs analyze them and collect metadata. These jobs use AWS Rekognition to detect labels, text and celebrities, and EXIF metadata from the camera used. Deployment of application code uses update-in-place.</p>
+<p><em>Our Operating Model:</em> The ExampleCorp team are mainly &quot;DevOps&quot; but there's separation of duties between the cloud infrastructure team and the application team. Application code is pushed via CI/CD pipeline around once a day; the platform engineering team tests and deploys infrastructure changes. The operating model focuses on fast deployment of new features, and rapid feedback on user experience. Application performance and availability are vital to accelerated sign ups, which drive our funding valuation.</p>
+<p>_ <strong>Our Team:</strong> _</p>
+<table>
+<thead>
+<tr>
+<th><strong>Title</strong></th>
+<th><strong>Name</strong></th>
+<th><strong>Requirements</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CEO</td>
+<td>Ada Lovelace</td>
+<td>focused on growing user base to secure funding, building a sustainable revenue stream.</td>
+</tr>
+<tr>
+<td>&mdash;</td>
+<td>&mdash;</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>CIO</td>
+<td>Bertrand Russell</td>
+<td>focused on efficiency and performance goals for IT Operations, release targets and application availability.</td>
+</tr>
+<tr>
+<td>Infrastructure Director</td>
+<td>Alan Turing</td>
+<td>Primary concern is security and stability of infrastructure.</td>
+</tr>
+<tr>
+<td>Application Director</td>
+<td>Grace Hopper</td>
+<td>making sure production is delighting customers and features are the right features are being delivered to production as quickly as possible</td>
+</tr>
+<tr>
+<td>InfoSec Director</td>
+<td>Elizabeth Feinler</td>
+<td>security threats posed by fast delivery, competing priorities between security and release timelines.</td>
+</tr>
+<tr>
+<td>DevOps Engineer</td>
+<td>Blaise Pascal</td>
+<td>wants insight into platform changes, application issues, and governance requirements affecting feature delivery and application security.</td>
+</tr>
+<tr>
+<td>Site Reliability Engineer</td>
+<td>Charles Babbage</td>
+<td>wants to stopped getting paged at all hours and wants to better understand system reliability</td>
+</tr>
+<tr>
+<td>Security Engineer</td>
+<td>Edsger Dijkstra</td>
+<td>Biggest challenge: speed to market sometimes means security issues come up only post-go-live.</td>
+</tr>
+<tr>
+<td>User Experience Lead</td>
+<td>Cindy Logan-Matthew</td>
+<td>Biggest challenge: user feature requests growing at a rate that exceeding ExampleCorp' ability to implement them.</td>
+</tr>
+<tr>
+<td>Financial Analyst</td>
+<td>George Boole</td>
+<td>Biggest challenge is variable operating expenses and rapid rate of utilization expansion make cost control difficult.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2.2 Building the Monitoring Plan</strong></p>
+<p>There are two goals of monitoring: - Achieve situational awareness to provide timely and effective responses and - Gain insights for the business, development, and operations that enable proactive courses of action.</p>
+<p>Understanding needs requires engagement. Users frequently ask for what they think they need or what they understand is possible. Apply the &quot;5 Whys&quot; technique, and do not assume that what they are asking for is what they actually need. Operations' engagement with teams enables understanding what they are trying to achieve and help determine options for achieving their monitoring goals.</p>
+<p>Consider:</p>
+<ul>
+<li>Personas and requirements: Who will consume the outputs from monitoring? What are their goals?</li>
+<li>System architecture and insights: What are the components? What telemetry should be collected?</li>
+<li>Thresholds for testing: What does good look like? How will it be measured?</li>
+<li>Reporting: What information should be provided via &quot;pull&quot; on-demand in Dashboards? Who are the stakeholders?</li>
+<li>Alerts and actions: What are the alerts that align to business outcomes? What actions should be taken when alerts occur?</li>
+</ul>
+<hr>
+<!-- raw HTML omitted -->
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/webbasedworkshop/lab0/" title="실습1. ClowdWatch Handson Lab"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/webbasedworkshop/lab2/" title="실습3. 제목" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/webbasedworkshop/js/clipboard.min.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/perfect-scrollbar.min.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/perfect-scrollbar.jquery.min.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/jquery.sticky.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/featherlight.min.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/highlight.pack.js?1621833915"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/webbasedworkshop/js/modernizr.custom-3.6.0.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/learn.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/hugo-learn.js?1621833915"></script>
+
+    <link href="/webbasedworkshop/mermaid/mermaid.css?1621833915" rel="stylesheet" />
+    <script src="/webbasedworkshop/mermaid/mermaid.js?1621833915"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+  </body>
+</html>

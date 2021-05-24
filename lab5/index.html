@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ko" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="description" content="Hugo를 이용한 워크샵 문서 만들기">
+<meta name="author" content="Hyuna Jung">
+
+    <link rel="icon" href="/webbasedworkshop/images/favicon.png" type="image/png">
+
+    <title>실습5. 제목 :: Web-based 워크샵 문서 만들기</title>
+
+    
+    <link href="/webbasedworkshop/css/nucleus.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/fontawesome-all.min.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/hybrid.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/featherlight.min.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/perfect-scrollbar.min.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/auto-complete.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/atom-one-dark-reasonable.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/theme.css?1621833915" rel="stylesheet">
+    <link href="/webbasedworkshop/css/hugo-theme.css?1621833915" rel="stylesheet">
+    
+      <link href="/webbasedworkshop/css/theme-aws.css?1621833915" rel="stylesheet">
+    
+
+    <script src="/webbasedworkshop/js/jquery-3.3.1.min.js?1621833915"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/webbasedworkshop/lab5/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/webbasedworkshop">
+	<img src="/webbasedworkshop/images/logo.png" height="70px"/>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/webbasedworkshop/js/lunr.min.js?1621833915"></script>
+<script type="text/javascript" src="/webbasedworkshop/js/auto-complete.js?1621833915"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/webbasedworkshop\/";
+    
+</script>
+<script type="text/javascript" src="/webbasedworkshop/js/search.js?1621833915"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab0/" title="실습1. ClowdWatch Handson Lab" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/webbasedworkshop/lab0/">
+          <b>1. </b>실습1. ClowdWatch Handson Lab
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab1/" title="실습2. 제목" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/webbasedworkshop/lab1/">
+          <b>2. </b>실습2. 제목
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab2/" title="실습3. 제목" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/webbasedworkshop/lab2/">
+          <b>3. </b>실습3. 제목
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab3/" title="실습4. 제목" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/webbasedworkshop/lab3/">
+          <b>4. </b>실습4. 제목
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab4/" title="실습5. 제목" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/webbasedworkshop/lab4/">
+          <b>5. </b>실습5. 제목
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab5/" title="실습5. 제목" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/webbasedworkshop/lab5/">
+          <b>5. </b>실습5. 제목
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/webbasedworkshop/lab6/" title="실습5. 제목" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/webbasedworkshop/lab6/">
+          <b>5. </b>실습5. 제목
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3></h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="/webbasedworkshop/credits/"><i class='fas fa-fw fa-bullhorn'></i> 크레딧</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> </a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      © 2020 Amazon Web Services, Inc. or its Affiliates. All rights reserved.
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/webbasedworkshop/'>홈</a> > 실습5. 제목
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#큰제목">큰제목</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              실습5. 제목
+            </h1>
+          
+
+        
+
+
+
+
+	<p><strong>실습에 대한 설명을 적습니다.</strong> <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="큰제목">큰제목</h3>
+<ol>
+<li>순서를 가이드합니다.</li>
+</ol>
+<p><strong>Automate responses</strong></p>
+<p><strong>Build a Monitoring Plan: Alerting and Response</strong></p>
+<p>Monitoring for Operational Outcomes Sansa Bailish is focused on outages, reliability, and getting better sleep. There is a known issue with image trends; when the instances are rebooted the application doesn’t restart. Too frequently Sansa has received a late night call to get online and restart the application. The user experience lead is very frustrated with the downtime associated to these incidents. They need to be detected sooner and resolved faster.</p>
+<p>Sansa is looking for a monitoring solution to detect the incident (the reboot event), and a way to trigger an automated recovery.</p>
+<p><strong>Create and Automate Responses</strong></p>
+<p>Create a Runbook to Resolve the Error</p>
+<p><strong>6.1 Resolve the error manually</strong></p>
+<ol>
+<li>Depending on your browser, you will see an error showing that the page cannot be loaded.</li>
+<li>Add /admin to the end of the URL from the CloudFormation output.</li>
+<li>Click on images in the menu to see the images with the error.</li>
+<li>Delete the image by pressing the x next to the image with no tags or errors in the tags.</li>
+<li>Click Home on the navigation bar at the top <strong>NOTE:</strong> The application should be working again.</li>
+</ol>
+<p><strong>6.2 Automate Responses using Lambda</strong></p>
+<ol>
+<li>Navigate to the Lambda Console</li>
+<li>Click on the ExampleCorpErrorEvent Lambda function</li>
+<li>Under Basic settings
+<ol>
+<li>Set Timeout to 30 seconds</li>
+<li>Under Network
+<ol>
+<li>Select the VPC created earlier with a 10.180.0.0/16 CIDR block for VPC</li>
+<li>Select …App Subnet (AZ1) under Subnets</li>
+<li>Select …App Subnet (AZ2) under Subnets</li>
+<li>Select …AppHostSecurityGroup… under Security groups</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Click on the Save button</li>
+</ol>
+<p><strong>6.3 Validate - Ensure the response has the desired outcome</strong></p>
+<ol>
+<li>Log in to ExampleCorp using the URL that you made a note of earlier (CloudFormation Output) in a new browser tab.</li>
+<li>Enter <a href="mailto:admin@admin.com">admin@admin.com</a> for email</li>
+<li>Enter Password123for Password</li>
+<li>Click Login</li>
+<li>Click Upload Image</li>
+<li>Click Select Image</li>
+<li>Find break_app.jpg in your filesystem</li>
+<li>Click Upload</li>
+<li>It will break again, but it should recover in a few seconds</li>
+<li>Keep an eye on the Lambda monitoring page</li>
+</ol>
+<p><strong>6.4: Bonus Content: Review the outcomes in CloudWatch</strong></p>
+<ol>
+<li>Click on View logs in CloudWatch</li>
+<li>Expand parts of the logs to see what happened.</li>
+<li>The Lambda got invoked</li>
+<li>You can see the SNS Message</li>
+<li>Then you see that 2 rows were deleted</li>
+<li>Finally the Lambda execution finishes with some summary statistics.</li>
+<li>Click on Alarms</li>
+<li>Select ImageErrorAlarm</li>
+<li>View the history see the Alarm State update and the Action to notify SNS which then calls the Lambda function.</li>
+</ol>
+<p>What have we achieved? - We have answered three monitoring needs, one for each of our teams. - We have provided insight to the quality of the end user experience by creating a image tag confidence metric for the business team. - We have provided insight to issues and potential development needs by providing the development team (DevOps) with error and warning metrics. - We have provided a mechanism for the operations team (SRE) to use an event trigger to automatically remediate an outage causing issue in the environment.</p>
+<p>How did we create an automatic remediation? - Knowing the log entry that indicates that the application has failed and is in a state from which it can be recovered we created a metric. - Using that metric we created an alarm that notifies via an SNS topic. - We have a Lambda function that is subscribed to that SNS topic that creates a CloudWatch Event in response. - We created a CloudWatch rule that triggers on our Lambda initiated CloudWatch event and invokes run command. - Our run command invocation uses a command document we created to execute the start up script on our server restoring it to an operating state.</p>
+<p>We have created something of a Rube Goldberg machine to achieve that outcome. In doing so we have demonstrated the use of logs and how to get more value out of them, the use of events, and the triggering of actions in response to events; all enabled by CloudWatch.</p>
+<hr>
+<!-- raw HTML omitted -->
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/webbasedworkshop/lab4/" title="실습5. 제목"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/webbasedworkshop/lab6/" title="실습5. 제목" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/webbasedworkshop/js/clipboard.min.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/perfect-scrollbar.min.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/perfect-scrollbar.jquery.min.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/jquery.sticky.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/featherlight.min.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/highlight.pack.js?1621833915"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/webbasedworkshop/js/modernizr.custom-3.6.0.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/learn.js?1621833915"></script>
+    <script src="/webbasedworkshop/js/hugo-learn.js?1621833915"></script>
+
+    <link href="/webbasedworkshop/mermaid/mermaid.css?1621833915" rel="stylesheet" />
+    <script src="/webbasedworkshop/mermaid/mermaid.js?1621833915"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+  </body>
+</html>
